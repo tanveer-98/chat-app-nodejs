@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <img src="./favicon.ico" alt='noimg'/>
+    </title>
+    <link rel="stylesheet" href="./styles.css">
+    <script  src = "/socket.io/socket.io.js"></script>
+    <script  async src = "./js/chat.js"></script>
+    <!-- async is blockign , defer is non-blocking -->
+</head>
+<body> 
+    <div class="container">
+        Chat App
+        <button onclick="buttonclickHandler()">CLICK ME</button>
+        <p>hi</p>
+        <form id="myform" name="myform" onsubmit ="return onSubmitHandler(event)">
+            <label for="message">Message</label>
+            <input type="text" id="message" name="message" placeholder="Message"/>
+            <input type="submit"/>
+        </form>
+        <button onclick="sendLocationHandler()">SEND LOCATION</button>
+        
+    </div>
+</body>
+</html>
